@@ -1,0 +1,29 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %}HomeCart Express Tracker {% endblock %}
+
+{% block body %}
+<div class="container">
+    {{response}}
+    <div class="col my-4">
+        <h3>Payment Status Regarding Your Order Id.{{response.order_id}}</h3>
+        {% if response.RESPCODE = '01'%}
+        Order Success
+
+        {% else %}
+        Order Failure
+        {% endif %}
+       
+       
+
+
+</div>
+
+
+{% endblock %}
+
+{% block js %}
+<script>
+
+</script>
+{% endblock %}

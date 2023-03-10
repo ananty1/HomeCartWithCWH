@@ -1,0 +1,64 @@
+{% extends 'blog/basic.html' %}
+
+{% block body %}
+
+<div class="container">
+    {% for prev,curr,next in post %}
+    <div class="row mt-3">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-3 mb-4 font-italic">
+                {{curr.title}}
+            </h3>
+            <div class="fb-like" data-href="http://127.0.0.1:8000/blog/blogpost/{{curr.post_id}}" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+            <div class="blog-post">
+                <h2 class="blog-post-title">{{curr.head0}}</h2>
+                <p class="blog-post-meta">{{curr.pub_date}} by <a href="#">Mark</a></p>
+                <blockquote>
+                    <p>{{currr.chead0}}</p>
+                </blockquote>
+                
+                <h2>{{curr.head1}}</h2>
+                <p>{{curr.chead1}}</p>
+                <h3>{{curr.head2}}</h3>
+                <p>{{curr.chead2 }}</p>
+                
+                <div class="fb-comments" data-href="http://127.0.0.1:8000/blog/blogpost/{{curr.post_id}}" data-numposts="1"></div>
+           
+            </div>  
+            <div class="blogpost">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4 class="blog-post-title"><a href="/blog/blogpost/{{prev.post_id}}">{{prev.title}}</a></h4>
+                    </div> 
+                    <div class="col-md-3">
+                        <h4 class="blog-post-title"><a href="/blog/blogpost/{{next.post_id}}">{{next.title}}</a></h4>
+                    </div>
+                </div>  
+            </div>
+            
+        </div><!-- /.blog-main -->
+
+        <aside class="col-md-4 blog-sidebar">
+            
+            <div class="p-3 mb-3 bg-light rounded">
+                <h4 class="font-italic">About</h4>
+                <p class="mb-0">HomeCart is an <em>shopping </em> website. You can use this site to buy your daily
+                    needed items.</p>
+            </div>
+
+
+
+            <div class="p-3">
+                <h4 class="font-italic">Contact Us On: </h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+        </aside><!-- /.blog-sidebar -->
+    
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
