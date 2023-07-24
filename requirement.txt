@@ -1,0 +1,4 @@
+#Do install requirement.txt
+django==4.2.3
+pycryptodome
+pillow
