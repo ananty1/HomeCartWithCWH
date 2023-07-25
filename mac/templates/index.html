@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script> window.location="/shop"; </script>
+    {% comment %} <script> window.location="/shop"; </script> {% endcomment %}
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,17 +9,45 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-    <title>Welcome to HomeCart</title>
+    <title>HomeCart</title>
   </head>
   <body>
-    <h1>Welcome to HomeCart</h1>
+    
     <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <h1 class="display-4 text-center">Welcome to HomeCart!</h1>
+        <p class="lead text-center">This is a base template that allows you to visit two of Our App. Well this is an attempt to make a Shopping Website such as flipkart,Amazon or myntra.</p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="/shop" role="button">Go To Shop</a>
-        <a class="btn btn-primary btn-lg" href="/blog" role="button">Go To Blog</a>
+        <h4 class="text-center">Click on the app to Go.</h4>
+        <div class="container">
+        <div class="row my-2">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="media/Logo.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">HomeCart</h5>
+                <p class="card-text">HomeCart is a shopping website,where you buy different items.</p>
+                <a class="btn btn-primary btn-lg" href="/shop" role="button">Go To Shop</a>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="media/blogHome.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">HomeBlog</h5>
+                <p class="card-text">HomeBlog is a blogging website,where one finds the posts on various topic.</p>
+                <a class="btn btn-primary btn-lg" href="/blog" role="button">Go To Blog</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+        
+        
       </div>
       
     <!-- Optional JavaScript -->

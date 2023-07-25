@@ -18,7 +18,7 @@
 <body>
     
     {% comment %} <h1>Hello, world! Shop</h1> {% endcomment %}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="/shop">HomeCart</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
             </form>
             <button type="button" class="btn btn-secondary mx-2" id="popcart" data-html="true" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Bottom popover">
-                Cart( <span id="cart">0</span> )
+                Cart <span id="cart" class="badge badge-light">0</span> 
               </button>
         </div>
     </nav>
