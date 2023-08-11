@@ -1,5 +1,5 @@
 {% extends 'shop/basic.html' %}
-
+{% block currActive %}active{% endblock currActive %}
 {% block title %}Search Results  {% endblock %}
 
 {% block css %}
@@ -125,7 +125,7 @@ padding-right: 0;
 <script>
     {% if msg|length != 0 %}
         alert('{{msg}}');
-        window.location.href='/'
+        window.location.href='/shop'
     {% endif %}
 
 

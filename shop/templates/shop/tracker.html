@@ -1,5 +1,5 @@
 {% extends 'shop/basic.html' %}
-
+{% block trackerActive %}active{% endblock trackerActive %}
 {% block title %}HomeCart Express Tracker {% endblock %}
 
 {% block body %}
@@ -89,13 +89,14 @@
                                 ${name}
                                 <span class="badge badge-primary badge-pill">${qty}</span>
                             </li>`
+                        $('#citems').append(mystr);
                         
                     }
                 } else {
                     mystr = `<li class="list-group-item d-flex justify-content-between align-items-center">
                         Sorry,We are not able to fetch this orded id and email .Make Sure to type correct order. </li>`
                     $('#items').append(mystr);
-                    $('#citems').append(mystr);
+                    
                 }
 
                 

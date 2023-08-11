@@ -1,10 +1,10 @@
 {% extends 'shop/basic.html' %}
-
+{% block contactActive %}active{% endblock contactActive %}
 {% block title %}Contact {% endblock %}
 
 {% block body %}
-<div class="container my-4">
-    <h2>Contact Us</h2>
+<div class="container my-2">
+    <h1>Share your feedback</h1>
     <form action="/shop/contact/" method="post">
         {% csrf_token %}
         <div class="form-group">

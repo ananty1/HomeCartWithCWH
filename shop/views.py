@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Product,Contact,Order,OrderUpdate
 from django.http import HttpResponse
 from math import ceil
@@ -46,6 +46,7 @@ def search(request):
     params={'allprod':allprod,'msg':""}
     if len(allprod)==0 or len(query)<4:
         params={'msg':'Please make sure to enter the relevant search query and length of query should be greater than 4'}
+        
 
     return render(request,'shop/search.html',params)
 

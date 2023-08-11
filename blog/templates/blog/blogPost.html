@@ -1,5 +1,5 @@
 {% extends 'blog/basic.html' %}
-
+{% block blogActive %}active{% endblock blogActive %}
 {% block body %}
 
 <div class="container">
@@ -13,13 +13,14 @@
             <div class="blog-post">
                 <h2 class="blog-post-title">{{curr.head0}}</h2>
                 <p class="blog-post-meta">{{curr.pub_date}} by <a href="#">Mark</a></p>
+                
                 <blockquote>
-                    <p>{{currr.chead0}}</p>
+                    {{currr.chead0}}
                 </blockquote>
                 
                 <h2>{{curr.head1}}</h2>
                 <p>{{curr.chead1}}</p>
-                <h3>{{curr.head2}}</h3>
+                <h5>{{curr.head2}}</h5>
                 <p>{{curr.chead2 }}</p>
                 
                 <div class="fb-comments" data-href="http://127.0.0.1:8000/blog/blogpost/{{curr.post_id}}" data-numposts="1"></div>

@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Redirecting You to merchant </h1>
-    <h1>Please Do not Refresh YOur Page. </h1>
+    <h3>Please Do not Refresh YOur Page. </h3>
     <form action="https://securegw-stage.paytm.in/theia/processTransaction" method="post" name="paytm" >
         {% for key,value in param_dict.items %}
         <input type="hidden" name="{{key}}" value="{{value}}">
