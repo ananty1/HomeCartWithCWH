@@ -1,4 +1,4 @@
-Django==4.2.3
+Django==3.2.24
 idna==3.4
 Naked==0.1.32
 Pillow==10.0.0
