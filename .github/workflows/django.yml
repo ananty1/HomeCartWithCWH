@@ -14,16 +14,6 @@ jobs:
       max-parallel: 4
       matrix:
         python-version: [3.7, 3.8, 3.9]
-
-    env:
-      SECRET_KEY: c2zse_q&7fy!-*g&1^g^hy587fz%-mopry67nishp+n%jb3iw=
-      PG_NAME: railway
-      PG_USER: postgres
-      PG_PASSWORD: 5Dd6GE6Fa3Bg5GdG*15b2fC5BDGFcCBb
-      PG_HOST: monorail.proxy.rlwy.net
-      PG_PORT: 22148
-
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}
