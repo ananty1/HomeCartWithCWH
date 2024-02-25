@@ -16,12 +16,12 @@ jobs:
         python-version: [3.7, 3.8, 3.9]
 
     env:
-      SECRET_KEY: c2zse_q&7fy!-*g&1^g^hy587fz%-mopry67nishp+n%jb3iw=
-      PG_NAME: railway
-      PG_USER: postgres
-      PG_PASSWORD: 5Dd6GE6Fa3Bg5GdG*15b2fC5BDGFcCBb
-      PG_HOST: monorail.proxy.rlwy.net
-      PG_PORT: 22148
+      SECRET_KEY: SECURITY_KEY
+      PG_NAME: NAME
+      PG_USER: USER
+      PG_PASSWORD: PASSWORD
+      PG_HOST: HOST
+      PG_PORT: PORT
 
       
     steps:
