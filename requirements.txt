@@ -1,0 +1,7 @@
+Django==4.2.3
+idna==3.4
+Naked==0.1.32
+Pillow==10.0.0
+pycryptodome==3.11.0
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1
